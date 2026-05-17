@@ -9,13 +9,11 @@ import {
   MapPin,
   Phone,
   Mail,
-  ArrowRight,
   Send,
   ChevronRight,
   Heart,
   Award,
   Globe,
-  Clock,
 } from "lucide-react";
 
 export default function Footer() {
@@ -40,7 +38,7 @@ export default function Footer() {
     { name: "Contact Us", href: "#" },
   ];
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = (e:any) => {
     e.preventDefault();
     if (email) {
       setIsSubscribed(true);

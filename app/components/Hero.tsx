@@ -1,19 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import {  ChevronLeft, Sparkles,  Clock, ChevronRight, X, Download ,  Users, Award, ArrowRight, GraduationCap, Globe, BookOpen, ExternalLink } from "lucide-react";
+import {  ChevronLeft, ChevronRight} from "lucide-react";
 import { useEffect, useState } from "react";
-import { 
-    Building2, 
-    Camera, 
-    Play, 
-    Wifi, 
-    Library, 
-    Trophy, 
-    Check, 
-    Calendar,
-    Beaker 
-} from 'lucide-react';
+
 import { motion } from "framer-motion";
 
 
@@ -41,20 +31,6 @@ const Hero = () => {
             subtitle: "Learn Beyond Boundaries",
             image: Heroimage,
         },
-    ];
-
-    const stats = [
-        { icon: Users, value: "10,000+", label: "Students Enrolled" },
-        { icon: Award, value: "200+", label: "Expert Faculty" },
-        { icon: Globe, value: "50+", label: "Global Partners" },
-        { icon: GraduationCap, value: "95%", label: "Placement Rate" }
-    ];
-
-    const programmes = [
-        { name: "Computer Science", duration: "4 Years", level: "Bachelor", icon: BookOpen },
-        { name: "Business Administration", duration: "3 Years", level: "Bachelor", icon: GraduationCap },
-        { name: "Data Science", duration: "2 Years", level: "Master", icon: Award },
-        { name: "International Relations", duration: "4 Years", level: "Bachelor", icon: Globe }
     ];
 
     // Auto Slide

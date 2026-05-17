@@ -8,6 +8,7 @@ import CtaSection from "./components/CtaSection";
 import StatsSection from "./components/StatsSection";
 import ProgrammersSection from "./components/ProgrammersSection";
 import ContactPage from "./components/ContactPage";
+import CampusHighilights from "./components/CampusHighilights";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <FeaturesSection />
       <CtaSection />
       <StatsSection />
-    
+       <CampusHighilights />
       <ProgrammersSection />
       <AlumniTestimonials />
       <ContactPage />

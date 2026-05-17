@@ -1,19 +1,5 @@
 "use client"
-import React from 'react'
-import Image from "next/image";
-import {  ChevronLeft, Sparkles,  Clock, ChevronRight, X, Download ,  Users, Award, ArrowRight, GraduationCap, Globe, BookOpen, ExternalLink } from "lucide-react";
-import { useEffect, useState } from "react";
-import { 
-    Building2, 
-    Camera, 
-    Play, 
-    Wifi, 
-    Library, 
-    Trophy, 
-    Check, 
-    Calendar,
-    Beaker 
-} from 'lucide-react';
+import {  Sparkles,  Download , ArrowRight} from "lucide-react";
 
 const CtaSection = () => {
   return (

@@ -12,14 +12,11 @@ import {
   MessageCircle,
   Calendar,
   Building2,
-  ArrowRight,
   Star,
   Shield,
   Award,
   Headphones,
 } from "lucide-react";
-
-// import ContactBanner from "../assets/contact-banner.jpg";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -30,17 +27,19 @@ export default function ContactPage() {
     message: "",
   });
 
-  const [formStatus, setFormStatus] = useState(null);
+  const [formStatus, setFormStatus] = useState<
+  "success" | "error" | null
+>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     setIsSubmitting(true);
     
@@ -90,7 +89,6 @@ export default function ContactPage() {
 
   return (
     <main className="w-full overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-      
       {/* ================= HERO SECTION ================= */}
       <section className="relative w-full min-h-[50vh] flex items-center justify-center overflow-hidden">
         

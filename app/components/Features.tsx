@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { 
   CheckCircle, 
-  Award, 
   Globe, 
   Briefcase, 
   Users, 
@@ -14,7 +13,6 @@ import {
   GraduationCap,
   Building2,
   Zap,
-  BookOpen,
   ChevronRight
 } from "lucide-react";
 
@@ -129,7 +127,7 @@ export default function FeaturesSection() {
                 key={index}
                 className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
                 style={{ animationDelay: `${400 + index * 100}ms` }}
-                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseEnter={(index:any) => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 {/* Animated Border Gradient */}

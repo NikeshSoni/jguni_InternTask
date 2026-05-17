@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import {  ChevronLeft, Sparkles,  Clock, ChevronRight, X, Download ,  Users, Award, ArrowRight, GraduationCap, Globe, BookOpen, ExternalLink } from "lucide-react";
-import { useEffect, useState } from "react";
+import {  X, ArrowRight } from "lucide-react";
+import { useState } from "react";
 import { 
     Building2, 
     Camera, 
@@ -14,8 +14,7 @@ import {
     Calendar,
     Beaker 
 } from 'lucide-react';
-import { motion } from "framer-motion";
-
+import JGYCF21Image from "../assets/JGYCF21.webp"
 
 
 const CampusHighilights = () => {
@@ -48,7 +47,7 @@ const CampusHighilights = () => {
                             {/* Main Image Container */}
                             <div className="relative h-[450px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src={Heroimage}
+                                    src={JGYCF21Image}
                                     alt="Campus View"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -78,7 +77,7 @@ const CampusHighilights = () => {
                                 {[1, 2, 3].map((item) => (
                                     <div key={item} className="relative h-24 rounded-xl overflow-hidden cursor-pointer group/thumb">
                                         <Image
-                                            src={Heroimage}
+                                            src={JGYCF21Image}
                                             alt={`Campus view ${item}`}
                                             fill
                                             className="object-cover transition-transform duration-300 group-hover/thumb:scale-110"

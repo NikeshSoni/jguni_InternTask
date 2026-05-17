@@ -1,16 +1,42 @@
 "use client";
 import {   Sparkles,  Clock, Award, ArrowRight, GraduationCap, Globe, BookOpen, ExternalLink } from "lucide-react";
-import { motion } from "framer-motion";
 
 const ProgrammersSection = () => {
     
 
     const programmes = [
-        { name: "Computer Science", duration: "4 Years", level: "Bachelor", icon: BookOpen },
-        { name: "Business Administration", duration: "3 Years", level: "Bachelor", icon: GraduationCap },
-        { name: "Data Science", duration: "2 Years", level: "Master", icon: Award },
-        { name: "International Relations", duration: "4 Years", level: "Bachelor", icon: Globe }
-    ];
+        {
+          name: "Computer Science",
+          duration: "4 Years",
+          level: "Bachelor",
+          description: "Learn programming, AI, and modern technologies.",
+          icon: BookOpen,
+        },
+      
+        {
+          name: "Business Administration",
+          duration: "3 Years",
+          level: "Bachelor",
+          description: "Develop leadership and business management skills.",
+          icon: GraduationCap,
+        },
+      
+        {
+          name: "Data Science",
+          duration: "2 Years",
+          level: "Master",
+          description: "Master analytics, machine learning, and big data.",
+          icon: Award,
+        },
+      
+        {
+          name: "International Relations",
+          duration: "4 Years",
+          level: "Bachelor",
+          description: "Study global politics and international diplomacy.",
+          icon: Globe,
+        },
+      ];
 
   return (
     <div>

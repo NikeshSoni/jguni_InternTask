@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { Users, Award, GraduationCap, Globe} from "lucide-react";
 
 

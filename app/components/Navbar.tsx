@@ -10,7 +10,7 @@ export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const navLinks = [
     { name: "Programmes", href: "#", icon: BookOpen, hasDropdown: true },
@@ -20,13 +20,32 @@ export default function Navbar() {
     { name: "Contact Us", href: "#", icon: Mail, hasDropdown: false },
   ];
 
-  // Dropdown content
-  const dropdownContent = {
-    Programmes: ["Undergraduate", "Postgraduate", "Doctoral", "Diploma", "Online Programs"],
-    Campus: ["Infrastructure", "Library", "Hostels", "Sports Complex", "Cafeteria"],
-    Career: ["Placements", "Internships", "Career Guidance", "Alumni Network", "Recruiters"],
+  const dropdownContent: Record<string, string[]> = {
+    Programmes: [
+      "Undergraduate",
+      "Postgraduate",
+      "Doctoral",
+      "Diploma",
+      "Online Programs",
+    ],
+  
+    Campus: [
+      "Infrastructure",
+      "Library",
+      "Hostels",
+      "Sports Complex",
+      "Cafeteria",
+    ],
+  
+    Career: [
+      "Placements",
+      "Internships",
+      "Career Guidance",
+      "Alumni Network",
+      "Recruiters",
+    ],
   };
-
+  
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
